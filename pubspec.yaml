@@ -1,5 +1,5 @@
-name: happy_coding
-description: A new Flutter application.
+name: first_app
+description: A new Flutter project.
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -17,6 +17,10 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  firebase_auth: ^0.14.0+1
+  
+  firebase_core: ^0.4.0+1
+  
   flutter:
     sdk: flutter
 
@@ -25,7 +29,7 @@ dependencies:
   cupertino_icons: ^0.1.2
 
 dev_dependencies:
-  flutter_test:
+  flutter_test: 
     sdk: flutter
 
 
@@ -34,11 +38,14 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets: 
+    - assets/logo.png
+    - assets/bg.jpg
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:
